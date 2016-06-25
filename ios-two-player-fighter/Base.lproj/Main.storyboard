@@ -54,14 +54,20 @@
                                     <constraint firstAttribute="height" constant="49" id="iSA-cn-6uF"/>
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="onPlayerTwoAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMJ-DZ-4Kq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7S-xd-vjU">
-                                <rect key="frame" x="243" y="27" width="135" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7S-xd-vjU">
+                                <rect key="frame" x="243" y="28" width="135" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="Nc2-Ok-haT"/>
                                     <constraint firstAttribute="width" constant="135" id="oIQ-VO-HGJ"/>
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="onPlayerOneAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGG-2n-yA8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppl-2b-NP4">
                                 <rect key="frame" x="88" y="42.5" width="53" height="20"/>
@@ -69,8 +75,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J0-E7-hnu">
-                                <rect key="frame" x="284" y="42" width="53" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J0-E7-hnu">
+                                <rect key="frame" x="284" y="43" width="53" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -97,11 +103,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1 attacks Player 2 for 20 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqb-kF-O8I">
+                                <rect key="frame" x="88" y="409" width="290" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ppl-2b-NP4" firstAttribute="centerX" secondItem="Ewn-9n-UkS" secondAttribute="centerX" id="2U9-IA-ln7"/>
                             <constraint firstItem="KJS-Cx-J4d" firstAttribute="centerY" secondItem="VlN-Qm-Fqv" secondAttribute="centerY" id="A8T-bd-rJp"/>
+                            <constraint firstItem="Iqb-kF-O8I" firstAttribute="centerY" secondItem="KJS-Cx-J4d" secondAttribute="centerY" id="Bhq-2Y-Gnm"/>
                             <constraint firstItem="Ewn-9n-UkS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DER-dW-730"/>
                             <constraint firstAttribute="trailing" secondItem="jJi-BB-g87" secondAttribute="trailing" constant="40" id="Gb7-WK-QgW"/>
                             <constraint firstItem="jJi-BB-g87" firstAttribute="centerX" secondItem="v7S-xd-vjU" secondAttribute="centerX" id="Gdg-gM-FgC"/>
@@ -122,6 +135,7 @@
                             <constraint firstItem="4J0-E7-hnu" firstAttribute="centerY" secondItem="v7S-xd-vjU" secondAttribute="centerY" id="gk7-bg-16s"/>
                             <constraint firstItem="XNv-1Q-UMH" firstAttribute="centerX" secondItem="v7S-xd-vjU" secondAttribute="centerX" id="nMm-hd-jrB"/>
                             <constraint firstItem="oQ2-Aa-qUi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vsa-D0-Ohu"/>
+                            <constraint firstItem="Iqb-kF-O8I" firstAttribute="centerX" secondItem="KJS-Cx-J4d" secondAttribute="centerX" id="vyt-c6-dg9"/>
                             <constraint firstItem="oQ2-Aa-qUi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xak-yg-FqG"/>
                             <constraint firstItem="v7S-xd-vjU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xym-hS-iyS"/>
                             <constraint firstItem="eYe-DY-n1G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="yVZ-yY-aJQ"/>
@@ -135,6 +149,11 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="450" height="450"/>
+                    <connections>
+                        <outlet property="playerOneHp" destination="XNv-1Q-UMH" id="Wpe-h8-Ui2"/>
+                        <outlet property="playerTwoHp" destination="BLg-Sf-Mmf" id="Wlh-Mh-WOc"/>
+                        <outlet property="textDisplay" destination="Iqb-kF-O8I" id="7ih-hH-UMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
