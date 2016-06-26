@@ -28,6 +28,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var restartLbl: UILabel!
     
+    @IBOutlet weak var playerOneImg: UIImageView!
+    
+    @IBOutlet weak var playerTwoImg: UIImageView!
+    
     var player1: Player!
     var player2: Player!
 
@@ -72,6 +76,7 @@ class ViewController: UIViewController {
             textDisplay.text = "\(player1.name) attacks \(player2.name) for \(player1.attackPower) HP"
             playerTwoHp.text = "\(player2.hp) HP"
         } else {
+            playerTwoImg.hidden = true
             textDisplay.text = "\(player1.name) has defeated \(player2.name)"
             playerTwoHp.text = "0 HP"
         }
@@ -86,6 +91,7 @@ class ViewController: UIViewController {
             textDisplay.text = "\(player2.name) attacks \(player1.name) for \(player2.attackPower) HP"
             playerOneHp.text = "\(player1.hp) HP"
         } else {
+            playerOneImg.hidden = true
             textDisplay.text = "\(player2.name) has defeated \(player1.name)"
             playerOneHp.text = "0 HP"
         }
@@ -95,8 +101,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onRestartPressed(sender: AnyObject) {
+        playerOneImg.hidden = false
         playerOneAttackBtn.hidden = false
         playerOneAttackLbl.hidden = false
+        playerTwoImg.hidden = false
         playerTwoAttackBtn.hidden = false
         playerTwoAttackLbl.hidden = false
         restartBtn.hidden = true

@@ -174,9 +174,11 @@
                         <outlet property="playerOneAttackBtn" destination="v7S-xd-vjU" id="7Oz-bC-3Gq"/>
                         <outlet property="playerOneAttackLbl" destination="4J0-E7-hnu" id="muz-BY-lBk"/>
                         <outlet property="playerOneHp" destination="XNv-1Q-UMH" id="Wpe-h8-Ui2"/>
+                        <outlet property="playerOneImg" destination="jJi-BB-g87" id="3dJ-fV-TId"/>
                         <outlet property="playerTwoAttackBtn" destination="Ewn-9n-UkS" id="ovM-97-P3K"/>
                         <outlet property="playerTwoAttackLbl" destination="ppl-2b-NP4" id="Y9H-br-sHk"/>
                         <outlet property="playerTwoHp" destination="BLg-Sf-Mmf" id="Wlh-Mh-WOc"/>
+                        <outlet property="playerTwoImg" destination="eYe-DY-n1G" id="6pq-4f-DT1"/>
                         <outlet property="restartBtn" destination="5hu-kP-Vba" id="b8l-lL-4db"/>
                         <outlet property="restartLbl" destination="Qst-O7-g4H" id="Daa-kY-39d"/>
                         <outlet property="textDisplay" destination="Iqb-kF-O8I" id="7ih-hH-UMg"/>
